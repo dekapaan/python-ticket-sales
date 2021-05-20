@@ -63,7 +63,7 @@ class TicketSales:
             elif self.variable.get() == 'Select Ticket':
                 raise ValueError  # If ticket type not selected, ValueError raised
 
-            elif int(self.ticket_spinbox.get()) == 0:
+            elif ticket_no == 0:
                 raise ValueError  # If spinbox value == 0, raise ValueError
 
             # Soccer type calculation total price calculation
@@ -111,4 +111,3 @@ class TicketSales:
 root = Tk()
 TicketSales(root)   # Instance of class
 root.mainloop()
-
